@@ -1,5 +1,19 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 
+body {
+  background-image: url('./images/spacex.jpeg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /*background-position: center;*/
+  background-repeat: no-repeat;
+  height: 100%;
+  color: #ffffff;
+}
+
+
+
 .container {
   text-align:center;
   position:fixed;
@@ -12,10 +26,11 @@
 .mainPanel {
   text-align: center;
   position:relative;
-  border: 3px solid #000000;
+  border: 3px solid #ffffff;
   border-radius: 35px;
   margin: 0 auto;
   padding:100px;
   height:250px;
   width:800px;
+  opacity: 2.0;
 }
