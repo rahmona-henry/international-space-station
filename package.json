@@ -4,7 +4,8 @@
   "description": "A web app that tracks the international space stations movements across the globe..",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/rahmona-henry/international-space-station/issues"
   },
-  "homepage": "https://github.com/rahmona-henry/international-space-station#readme"
+  "homepage": "https://github.com/rahmona-henry/international-space-station#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }

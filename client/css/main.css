@@ -1,0 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+.container {
+  text-align:center;
+  position:fixed;
+  top:50%;
+  transform:translateY(-50%);
+  width:100%;
+  margin: 0 auto;
+}
