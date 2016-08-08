@@ -2,12 +2,14 @@
 
 body {
   background-image: url('./images/spacex.jpeg');
-  -webkit-background-size: cover;
+  /*-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover;*/
   /*background-position: center;*/
-  background-repeat: no-repeat;
+  /*background-repeat: no-repeat;*/
+  background-position:initial;
+  bottom:30px
   height: 100%;
   color: #ffffff;
 }
