@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/rahmona-henry/international-space-station#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "xhr": "^2.2.2"
   }
 }
