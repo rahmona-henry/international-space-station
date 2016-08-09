@@ -15,6 +15,12 @@ request('https://api.wheretheiss.at/v1/satellites/25544', function(error, respon
   console.log(body)
 })
 
+
+app.get('/results', function(req, res){
+  res.render('results')
+})
+
+
 app.listen(3000, function(){
   console.log('Taking off on port 3000!')
 })
