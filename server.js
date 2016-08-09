@@ -1,6 +1,6 @@
 var express = require('express')
 var app = express()
-var xhr = require('xhr')
+var request = require('request')
 
 app.use(express.static('client'))
 
@@ -8,12 +8,11 @@ app.get('/', function(req, res){
   res.send('index.html')
 })
 
-xhr.get('https://api.wheretheiss.at/v1/satellites/25544', function(err,data){
-  if(err) {
-    console.log('error', err)
+request('https://api.wheretheiss.at/v1/satellites/25544', function(error, response, body){
+  if(error) {
+    console.log('error', error)
   }
-  console.log('this is data', data)
-
+  console.log(body)
 })
 
 app.listen(3000, function(){
