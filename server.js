@@ -12,17 +12,13 @@ request('https://api.wheretheiss.at/v1/satellites/25544', function(error, respon
   if(error) {
     console.log('error', error)
   }
-    var results = response;
-    console.log(response.body)
-
-
+  console.log(response.body)
 })
 
 
-// app.get('/results', function(req, res){
-//   var results = res.body
-//   console.log(results)
-// })
+app.get('/results', function(req, res){
+  res.json(res.body)
+})
 
 
 app.listen(3000, function(){
