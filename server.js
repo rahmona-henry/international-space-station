@@ -11,13 +11,16 @@ app.get('/', function(req, res){
 request('https://api.wheretheiss.at/v1/satellites/25544', function(error, response){
   if(error) {
     console.log('error', error)
+
   }
-  console.log(response.body)
+    // console.log(response.body)
+    var result = JSON.parse(response.body)
+    console.log(result)
 })
 
 
 app.get('/results', function(req, res){
-  res.json(res.body)
+  res.render(result)
 })
 
 
