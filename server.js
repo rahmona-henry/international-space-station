@@ -8,17 +8,21 @@ app.get('/', function(req, res){
   res.send('index.html')
 })
 
-request('https://api.wheretheiss.at/v1/satellites/25544', function(error, response, body){
+request('https://api.wheretheiss.at/v1/satellites/25544', function(error, response){
   if(error) {
     console.log('error', error)
   }
-  console.log(body)
+    var results = response;
+    console.log(response.body)
+
+
 })
 
 
-app.get('/results', function(req, res){
-  res.render('results')
-})
+// app.get('/results', function(req, res){
+//   var results = res.body
+//   console.log(results)
+// })
 
 
 app.listen(3000, function(){
