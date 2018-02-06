@@ -13,13 +13,15 @@ request('https://api.wheretheiss.at/v1/satellites/25544', function(error, respon
     console.log('error', error)
 
   }
-    // console.log(response.body)
-    var result = JSON.parse(response.body)
-    console.log(result)
+
 })
 
 
-app.get('/results', function(req, res){
+app.get('/results', function(req,res,data){
+  // console.log('this is res',res)
+  var result = JSON.stringify(data)
+  // var yourval = jQuery.parseJSON(JSON.stringify(data));
+  // console.log('this is result:',result)
   res.render(result)
 })
 
