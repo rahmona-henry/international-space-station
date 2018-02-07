@@ -8,6 +8,8 @@ app.get('/', function(req, res){
   res.send('index.html')
 })
 
+
+
 request('https://api.wheretheiss.at/v1/satellites/25544', function(error, response){
   var result = response.body
   console.log('result', result)
@@ -24,6 +26,19 @@ request('https://api.wheretheiss.at/v1/satellites/25544', function(error, respon
 })
 
 
+
+
+
+
+app.get('/results', function(req,res){
+ request('https://api.wheretheiss.at/v1/satellites/25544', function(error, response){
+
+    var result = response.body
+    console.log('this is the result...........', result)
+    res.send(result.name)
+
+  })
+  })
 
 
 app.listen(3000, function(){
