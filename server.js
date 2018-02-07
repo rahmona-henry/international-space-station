@@ -9,21 +9,21 @@ app.get('/', function(req, res){
 })
 
 request('https://api.wheretheiss.at/v1/satellites/25544', function(error, response){
+  var result = response.body
+  console.log('result', result)
   if(error) {
     console.log('error', error)
+}
 
-  }
+
+// app.get('/results', function(req,res){
+//    var result = response
+//   res.json(result)
+// })
 
 })
 
 
-app.get('/results', function(req,res,data){
-  // console.log('this is res',res)
-  var result = JSON.stringify(data)
-  // var yourval = jQuery.parseJSON(JSON.stringify(data));
-  // console.log('this is result:',result)
-  res.render(result)
-})
 
 
 app.listen(3000, function(){
